@@ -1,8 +1,7 @@
 
 
+
 #header {
-  background-color: #DDFFEE;
-  background-image: url(checks.svg), url(checks.svg);
   background-position: top, bottom;
   background-repeat: repeat-x;
   background-size: 35px;
@@ -13,11 +12,22 @@
   text-align: center;
 }
 
+/* tag selectors */
+body {
+  background-image: url();
+  opacity: 40%;
+  margin: 0;
+}
+
+h1 {
+
+}
+
 
 /* button */
 
-.btn-yellow {
-  background-color: #FF0;
+.btn-white {
+  background-color: white;
   border: 3px solid #BB0;
   border-radius: 5px;
   color: #DA0;
@@ -27,9 +37,10 @@
   padding: 0 10px 2px 10px;
   transition: baclground-color 0.5s;
   transition: color 0.5s;
+  
 }
 
-.btn-yellow:hover {
+.btn-white:hover {
   color: #FF0;
   background-color: #DA0;
   text-decoration: none;
