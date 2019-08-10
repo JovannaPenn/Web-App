@@ -5,7 +5,6 @@
   background-position: top, bottom;
   background-repeat: repeat-x;
   background-size: 35px;
-  border-bottom: white 10px solid;
   margin-bottom: 40px;
   padding-top: 50px;
   padding-bottom: 40px;
@@ -17,10 +16,11 @@ body {
   background-image: url();
   opacity: 40%;
   margin: 0;
+  background-color: #abc6d4;
 }
 
 h1 {
-
+font-size: 4em;
 }
 
 
@@ -37,7 +37,7 @@ h1 {
   padding: 0 10px 2px 10px;
   transition: baclground-color 0.5s;
   transition: color 0.5s;
-  
+
 }
 
 .btn-white:hover {
