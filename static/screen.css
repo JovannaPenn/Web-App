@@ -1,5 +1,6 @@
 
-
+/* google font import */
+@import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
 
 #header {
   background-position: top, bottom;
@@ -11,9 +12,10 @@
   text-align: center;
 }
 
+
 /* tag selectors */
 body {
-  background-image: url();
+  background-image: url(galaxy.jp);
   opacity: 40%;
   margin: 0;
   background-color: #abc6d4;
@@ -21,7 +23,20 @@ body {
 
 h1 {
 font-size: 4em;
+font-family: 'Space Mono', monospace;
+color: white;
 }
+
+h2{
+  font-family: 'Space Mono', monospace;
+  color: white;
+}
+
+h3{
+  font-family: 'Space Mono', monospace;
+  color: white;
+}
+
 
 
 /* button */
@@ -33,7 +48,8 @@ font-size: 4em;
   color: #DA0;
   cursor: pointer;
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 1em;
+  font-family: 'Space Mono', monospace;
   padding: 0 10px 2px 10px;
   transition: baclground-color 0.5s;
   transition: color 0.5s;
@@ -46,4 +62,10 @@ font-size: 4em;
   text-decoration: none;
   transition: background-color 0.5s;
   transition: color 0.5s;
+}
+
+.questions ol {
+  font-family: 'Space Mono', monospace;
+  color: white;
+  font-size: 1.5em;
 }

@@ -10,7 +10,7 @@
     <meta name="description" content="What order should you watch the Star Wars movies in?" />
     <meta name="viewport" content="width=device-width, intial-scale=1, shrink-to-
     fit=no">
-    <link rel="stylesheet" href="screen.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='screen.css') }}">
 
   </head>
 
@@ -19,10 +19,8 @@
 
     <div id="header">
       <h1> What order should you watch the Star Wars movies in? </h1>
-
-
     <p>
-      <a class="btn-white" href="quiz.html"> Start Quiz </a>
+      <a class="btn-white" href="{{ url_for('quiz') }}"> Start Quiz </a>
     </p>
     </div>
 

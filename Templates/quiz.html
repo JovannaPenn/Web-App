@@ -8,30 +8,27 @@
   <meta name="description" content="What order should you watch the Star Wars movies in?" />
   <meta name="viewport" content="width=device-width, intial-scale=1, shrink-to-
   fit=no">
-  <link rel="stylesheet" href="screen.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='screen.css') }}">
 
 </head>
 
 <body>
   <div id="header">
-    <h2> Is this your first time watching the series? </h2>
-    <p>
-      <a class="btn-white"> It's my first time </a>
-      <a class="btn-white"> I have seen 1 or 2 </a>
-      <a class="btn-white"> I have seen them all </a>
-
-    <h2> Would you want to include the spin-offs in your watching experience? </h2>
-      <a class="btn-white"> Yes </a>
-      <a class="btn-white"> No </a>
-      <a class="btn-white"> I don't mind </a>
-
-    <h2> What character would you want the movies to focus on? </h2>
-      <a class="btn-white"> Luke Skywalker </a>
-      <a class="btn-white"> Obi-wan Kenobi </a>
-      <a class="btn-white"> I don't mind </a>
-
+    <ul class="questions">
+      {% for question in questions %}
+      <ol> {{ question[0] }} </ol>
+      {{ question[1] }} {{ question[2] }} {{ question[3] }}
+      <ol> {{ question[4] }} </ol>
+      {{ question[5] }} {{ question [6] }} {{ question [7] }}
+      <ol> {{ question[8] }} </ol>
+      {{ question[9] }} {{ question[10] }} {{ question[11] }}
+      {% endfor %}
+      </ul>
 
     <h3> Click below to find the order you should watch the Star Wars movies in </h3>
-      <a class="btn-white" href="movie_order.html"> Show me the order </a>
+      <a class="btn-white" href="result.html"> Show me the order </a>
+    </div>
+
+</body>
 
 </html>
