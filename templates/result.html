@@ -7,7 +7,16 @@
   <meta name="description" content="What order should you watch the Star Wars movies in?" />
   <meta name="viewport" content="width=device-width, intial-scale=1, shrink-to-
   fit=no">
-  <link rel="stylesheet" href="screen.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='screen.css') }}">
 
 </head>
+
+<body>
+  <div id="header">
+    <h2>Here is what order you should watch the Star Wars movies in:</h2>
+
+    <br />
+    <p> {{ result }} </p>
+  </div>
+</body>
 </html>

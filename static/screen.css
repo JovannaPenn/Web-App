@@ -15,8 +15,8 @@
 
 /* tag selectors */
 body {
-  background-image: url(galaxy.jp);
-  opacity: 40%;
+  background-image: url(galaxy.jpg);
+  background-size: cover;
   margin: 0;
   background-color: #abc6d4;
 }
@@ -27,6 +27,12 @@ font-family: 'Space Mono', monospace;
 color: white;
 }
 
+p{
+  font-size: 1.5em;
+  font-family: 'Space Mono', monospace;
+  color: white;
+}
+
 h2{
   font-family: 'Space Mono', monospace;
   color: white;
@@ -34,7 +40,7 @@ h2{
 
 h3{
   font-family: 'Space Mono', monospace;
-  color: white;
+  color: darkblue;
 }
 
 
@@ -64,8 +70,11 @@ h3{
   transition: color 0.5s;
 }
 
-.questions ol {
+
+
+/* results */
+.results {
   font-family: 'Space Mono', monospace;
-  color: white;
-  font-size: 1.5em;
+  font-color: blue;
+
 }
