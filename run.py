@@ -59,9 +59,27 @@ def result():
     if answer3=='1':
         result = 'A New Hope, The Empire Strikes Back, Return of the Jedi, The Phantom Menace, Attack of the Clones, Revenge of the Sith, The Force Awakens, Rogue One, The Last Jedi, Solo'
 
+#Fetch the total number of matches
+    cur = db.execute(
+    'SELECT COUNT(*) FROM results WHERE answer1=? AND answer2=? AND answer3=?',
+    (answer1,answer2,answer3)
+    )
+    matches = cur.fetchone()[0]
 
-    SELECT COUNT(*) FROM results WHERE answer1 = 1 AND answer2 = 2 AND answer3 = 3;
-    SELECT COUNT(*) FROM results;
+#Fetch the total number of reponses
+    cur = db.execute(
+    'SELECT count(*) FROM results'
+    )
+    total = cur.fetchone()[0]
+
+#Calculate the percentage figure
+    percent = int(matches) / int(total)*100
+    print(percent)
+
+    cur = db.execute(
+    'INSERT INTO results(answer1,answer2,answer3) VALUES(?,?,?)',
+    (answer1,answer2,answer3)
+    )
 
     cur = db.execute(
     'INSERT INTO results(answer1, answer2, answer3) VALUES(?, ?, ?)',
