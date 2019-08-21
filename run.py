@@ -39,25 +39,23 @@ def result():
     answer3 = request.form['3']
 
     if answer1=='1' and answer2=='1':
-        result = 'The Phantom Menace, Attack of the Clones, Revenge of the Sith, Solo, Rogue One, A New Hope, The Empire Strikes back, Return of the Jedi, The Force Awakens, The Last Jedi'
+        result = 'This order is in chronological order. So you will experience the story in order of events: The Phantom Menace, Attack of the Clones, Revenge of the Sith, Solo, Rogue One, A New Hope, The Empire Strikes back, Return of the Jedi, The Force Awakens, The Last Jedi'
 
-    if answer1=='1' and answer2=='2':
-        result = 'The Phantom Menace, Attack of the Clones, Revenge of the Sith, A New Hope, The Empire Strikes back, Return of the Jedi, The Force Awakens, The Last Jedi'
 
     if answer3=='2':
-        result = 'A New Hope, The Phantom Menace, Attack of the Clones, Revenge of the Sith, The Empire Strikes Back, Return of the Jedi, The Force Awakens, The Last Jedi'
+        result = 'This order makes the movies focus on Obi-Wan Kenobi instead of Luke Skywalker: A New Hope, The Phantom Menace, Attack of the Clones, Revenge of the Sith, The Empire Strikes Back, Return of the Jedi, The Force Awakens, The Last Jedi'
 
     if answer1=='3' and answer2=='3' and answer3=='3':
-        result = 'A New Hope, The Empire Strikes Back, The Phantom Menace, Attack of the Clones, Revenge of the Sith, Return of the Jedi, The Force Awakens, The Last Jedi'
+        result = 'This order is called the Ernst Rister order. This order treats the prequels of the movies as a flashback, meaning that the Darth Vader plot twist is heightened: A New Hope, The Empire Strikes Back, The Phantom Menace, Attack of the Clones, Revenge of the Sith, Return of the Jedi, The Force Awakens, The Last Jedi'
 
     if answer1=='3' and answer2=='1' and answer3=='3':
-        result = 'A New Hope, Solo, Rogue One, The Empire Strikes Back, The Phantom Menace, Attack of the Clones, Revenge of the Sith, Return of the Jedi, The Force Awakens, The Last Jedi'
+        result = 'This order uses Solo and Rogue One to give context to the movie A new Hope. It also treats them as flashbacks: A New Hope, Solo, Rogue One, The Empire Strikes Back, The Phantom Menace, Attack of the Clones, Revenge of the Sith, Return of the Jedi, The Force Awakens, The Last Jedi'
 
     if answer2=='2':
-        result = 'A New Hope, The Phantom Menace, The Force Awakens, The Empire Strikes Back, Attack of the Clones, The Last Jedi, Return of the Jedi, Revenge of the Sith'
+        result = 'This order takes out the prequels to the movies: A New Hope, The Phantom Menace, The Force Awakens, The Empire Strikes Back, Attack of the Clones, The Last Jedi, Return of the Jedi, Revenge of the Sith'
 
     if answer3=='1':
-        result = 'A New Hope, The Empire Strikes Back, Return of the Jedi, The Phantom Menace, Attack of the Clones, Revenge of the Sith, The Force Awakens, Rogue One, The Last Jedi, Solo'
+        result = 'This is in order of the movies release. So it begins with episode 4: A New Hope, The Empire Strikes Back, Return of the Jedi, The Phantom Menace, Attack of the Clones, Revenge of the Sith, The Force Awakens, Rogue One, The Last Jedi, Solo'
 
 #Fetch the total number of matches
     cur = db.execute(
