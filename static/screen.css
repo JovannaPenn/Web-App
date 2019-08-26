@@ -49,9 +49,9 @@ h3{
 
 .btn-white {
   background-color: white;
-  border: 3px solid #BB0;
+  border: 3px solid #000000;
   border-radius: 5px;
-  color: #DA0;
+  color: #4549ff;
   cursor: pointer;
   display: inline-block;
   font-size: 1em;
@@ -63,8 +63,8 @@ h3{
 }
 
 .btn-white:hover {
-  color: #FF0;
-  background-color: #DA0;
+  color: #ffffff;
+  background-color: #4549ff;
   text-decoration: none;
   transition: background-color 0.5s;
   transition: color 0.5s;
